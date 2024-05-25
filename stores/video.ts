@@ -21,6 +21,7 @@ export const useVideoStore = defineStore(
   },
   {
     persist: {
+      //aqui salva no localStorage, para que atualize automaticamente.
       storage: persistedState.sessionStorage,
     },
   }

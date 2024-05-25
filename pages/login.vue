@@ -1,7 +1,7 @@
 <template>
   <UCard>
     <template #header>
-      <h1 class="text-2xl text-center">Faça login para acessar a plataforma</h1>
+      <h1 class="text-2xl text-center p-3">Faça login para acessar a plataforma</h1>
       <a href="/auth/google" class="block">
         <UButton block label="Login com o Google" color="gray" size="lg">
           <template #leading>

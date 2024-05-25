@@ -47,7 +47,7 @@ const {
   refresh,
   status,
 } = useLazyFetch(`https://reqres.in/api/users`, {
-  // pick: ["page", "data"],
+  // pick: ["page", "data"], defini quais campos que deseja exibir
   transform: (clientes) => {
     return clientes.data.map((p) => ({
       id: p.id,
@@ -56,8 +56,8 @@ const {
       foto: p.avatar,
     }));
   },
-  //watch: [pagina],
-  query: {
+  //watch: [pagina], ouve quando uma variavel muda
+  query: { // dessa forma entende a páginação
     page: pagina,
   },
 });
